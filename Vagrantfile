@@ -26,9 +26,6 @@ Vagrant.configure(2) do |config|
     # install dependencies
     sudo apt-get install --yes exiv2 git hugin realpath xvfb
 
-    # add DISPLAY environment variable
-    printf -- 'export DISPLAY=:1\\n' >> $HOME/.bashrc
-
     # clone fixing scripts repository
     git clone https://github.com/mbirth/ricoh-theta.git
   SHELL
